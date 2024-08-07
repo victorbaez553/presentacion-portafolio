@@ -5,6 +5,7 @@
     margin: 0;
 }
 body {
+    height: 45vh;
     box-sizing: border-box;
     background-color: #000000;
     color: #F6F6F6;
@@ -13,10 +14,25 @@ body {
 .texto-destaque{
     color: #22D4FD;
 }
+.header{
+    padding: 2% 0% 0% 15%;
+}
+.header__menu{
+    display: flex;
+    gap: 80px;
+}
+.header__menu__link{
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #22D4FD;
+
+}
 .presentacion{
+
+    padding: 7% 7%;
     display: flex;
     align-items: center;
-    margin: 15% 15%;
     justify-content: space-between;
 
 }
