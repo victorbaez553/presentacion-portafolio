@@ -13,7 +13,6 @@
     margin: 0;
 }
 body {
-    height: 45vh;
     box-sizing: border-box;
     background-color: var(--color-primario);
     color: var(--color-secundario);
@@ -31,7 +30,7 @@ body {
 }
 .header__menu__link{
     font-family: var(--fuente-montserrat);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     color: var(--color-terciario);
     text-decoration: none;
@@ -42,21 +41,22 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 82px;
 
 }
 .presentacion__contenido{
-    width: 615px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 40px;
 
 }
 .presentacion__contenido__titulo{
-    font-size: 36px;
+    font-size: 2.25rem;
     font-family: var(--fuente-krona);
 }
 .presentacion__contenido__texto{
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: var(--fuente-montserrat);
 }
 .presentacion__enlace {
@@ -68,16 +68,16 @@ body {
 }
 presentacion__enlace__subtitulos{
     font-family: var(--fuente-krona);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400;
 }
 .presentacion__enlace__link{
-    width: 280px;
+    width: 65%;
     text-align: center;
     padding: 21.5px 0;
     border-radius: 8px;
     font-family: var(--fuente-montserrat);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     text-decoration: none;
     color: var(--color-secundario);
@@ -89,12 +89,34 @@ presentacion__enlace__subtitulos{
 .presentacion__enlace__link:hover{
     background-color: var(--color-hover);
 }
+.presentacion__enlace{
+    width: 50%;
+}
 .footer{
     background-color: var(--color-terciario);
-    padding: 24px;
+    padding: 1.5rem;
     color: var(--color-primario);
     text-align: center;
     font-family: var(--fuente-montserrat);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400;
+}
+@media (max-width: 1200px) {
+    .header{
+        padding: 10%;
+    }
+    .header__menu {
+        justify-content: center;
+    }
+    .presentacion {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .presentacion__contenido{
+        width: auto;
+    }
+    .presentacion__enlace__link {
+        width: 11rem;
+        justify-content: center;
+    }
 }
